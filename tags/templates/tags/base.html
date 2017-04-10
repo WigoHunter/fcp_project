@@ -1,8 +1,18 @@
 <html>
 <head>
-    <title>FCP</title>
+    <title>Browse by Tags | FCP</title>
+    <link rel="stylesheet" href="/media/static/games.css" />
 </head>
 <body>
+    <div class="menu">
+      <h2>FCP</h2>
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'tags:tags' %}">Browse By Member Tags</a></li>
+        <li><a href="{% url 'genres:genres' %}">Browse By Genre</a></li>
+        <li><a href="{% url 'purchases:purchases' %}">Browse By Previously Purchased</a></li>
+      </ul>
+    </div>
     {% block content %}
     {% endblock %}
 </body>
